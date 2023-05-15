@@ -1,4 +1,8 @@
 <h1 class="display2 text-center bg-primary">Products</h1>
+<p>
+    <a routerLink="addpro" class="btn btn-primary" >Add Product</a>
+    <a routerLink="reg" class="btn btn-primary" >Registration</a>
+</p>
 
 <div class="card-columns">
     <div class="card" style="width:400px" *ngFor="let i of products">
@@ -8,7 +12,7 @@
         <h4 class="card-title">{{i.title}}</h4>
         <p class="card-text font-weight-bold">{{i.price|currency:"EUR"}}</p>
             <div class="card-footer">
-                <a  class="btn btn-primary" (click)='details()'>View More</a>
+                <a  class="btn btn-primary" id="{{i.id}}" (click)='details($event)'>View More</a>
             </div>
         </div>
     </div>

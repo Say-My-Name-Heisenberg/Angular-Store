@@ -1,0 +1,28 @@
+<div class="row">
+    <div class="col">    </div>
+    <div class="col">
+        <h1>Add Product</h1>
+        <form [formGroup]="UserForm" (ngSubmit)="clicked()">
+            <div>
+                <input type="text" formControlName="first_name" name="" id="" class="form-control" placeholder="first_name"> 
+            </div>
+            <div>
+                <input type="text" formControlName="last_name" name="" id="" class="form-control" placeholder="last_name"> 
+            </div>
+            <div>
+                <input type="text" formControlName="username" name="" id="" class="form-control" placeholder="username"> 
+            </div>
+            <div>
+                <input type="number" formControlName="phone" name="" id="" class="form-control" placeholder="phone"> 
+            </div>
+            <div>
+                <input type="email" formControlName="email" name="" id="" class="form-control" placeholder="email"> 
+            </div>
+            <div class="text-center">
+                <button class="btn btn-success">ADD</button>
+                </div>
+
+        </form>
+    </div>
+    <div class="col"></div>
+</div>

@@ -6,15 +6,22 @@ import { AppComponent } from './app.component';
 import { ProComponent } from './pro/pro.component';
 import { P1Component } from './p1/p1.component';
 
+import { ReactiveFormsModule } from '@angular/forms';
+import { NewProComponent } from './new-pro/new-pro.component';
+import { RegsitrationComponent } from './regsitration/regsitration.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     ProComponent,
-    P1Component
+    P1Component,
+    NewProComponent,
+    RegsitrationComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

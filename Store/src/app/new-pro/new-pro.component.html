@@ -1,0 +1,28 @@
+<div class="row">
+    <div class="col">    </div>
+    <div class="col">
+        <h1>Add Product</h1>
+        <form [formGroup]="ProductForm" (ngSubmit)="clicked()">
+            <div>
+                <input type="text" formControlName="title" name="" id="" class="form-control" placeholder="Title"> 
+            </div>
+            <div>
+                <input type="text" formControlName="category" name="" id="" class="form-control" placeholder="Category"> 
+            </div>
+            <div>
+                <input type="text" formControlName="desc" name="" id="" class="form-control" placeholder="Description"> 
+            </div>
+            <div>
+                <input type="number" formControlName="rating" name="" id="" class="form-control" placeholder="Rating"> 
+            </div>
+            <div>
+                <input type="number" formControlName="price" name="" id="" class="form-control" placeholder="Prize"> 
+            </div>
+            <div class="text-center">
+                <button class="btn btn-success">ADD</button>
+                </div>
+
+        </form>
+    </div>
+    <div class="col"></div>
+</div>
