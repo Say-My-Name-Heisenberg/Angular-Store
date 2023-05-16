@@ -5,18 +5,33 @@
         <form [formGroup]="ProductForm" (ngSubmit)="clicked()">
             <div>
                 <input type="text" formControlName="title" name="" id="" class="form-control" placeholder="Title"> 
+                <div class="alert alert-danger" *ngIf="this.ProductForm.get('title')?.invalid && this.ProductForm.get('title')?.touched">
+                    Title is invalid
+                </div>
             </div>
             <div>
-                <input type="text" formControlName="category" name="" id="" class="form-control" placeholder="Category"> 
+                <input type="text" formControlName="category" name="" id="" class="form-control" placeholder="Category">
+                <div class="alert alert-danger" *ngIf="this.ProductForm.get('category')?.invalid && this.ProductForm.get('category')?.touched">
+                    Category is invalid
+                </div> 
             </div>
             <div>
                 <input type="text" formControlName="desc" name="" id="" class="form-control" placeholder="Description"> 
+                <div class="alert alert-danger" *ngIf="this.ProductForm.get('desc')?.invalid && this.ProductForm.get('desc')?.touched">
+                    Description is invalid
+                </div>
             </div>
             <div>
-                <input type="number" formControlName="rating" name="" id="" class="form-control" placeholder="Rating"> 
+                <input type="number" formControlName="rating" name="" id="" class="form-control" placeholder="Rating">
+                <div class="alert alert-danger" *ngIf="this.ProductForm.get('rating')?.invalid && this.ProductForm.get('ratig')?.touched">
+                    Rating is invalid
+                </div> 
             </div>
             <div>
                 <input type="number" formControlName="price" name="" id="" class="form-control" placeholder="Prize"> 
+                <div class="alert alert-danger" *ngIf="this.ProductForm.get('price')?.invalid && this.ProductForm.get('price')?.touched">
+                    Price is invalid
+                </div>
             </div>
             <div class="text-center">
                 <button class="btn btn-success">ADD</button>
